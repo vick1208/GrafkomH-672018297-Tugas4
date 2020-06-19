@@ -19,6 +19,12 @@ void disp() {
     glVertex2f(50.0f+x, 150.0f);
     glVertex2f(50.0f+p,50.0f+q);
     glEnd();
+    glBegin(GL_POLYGON);
+    glColor3f(0.0, 0.0, 1.0);
+    glVertex2f(150.0f, 150.0f + y);
+    glVertex2f(50.0f + x, 150.0f);
+    glVertex2f(50.0f + p, 50.0f + q);
+    glEnd();
     glutSwapBuffers();
 
 }
